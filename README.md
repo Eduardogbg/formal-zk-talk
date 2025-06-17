@@ -1,6 +1,6 @@
 # proofproofpass.it
 
-my talk at zuberlin 2025, tuesday 17th of june, about the landscape of formally verifying zkVMs
+my talk at zuberlin 2025, tuesday 17th of june, 4:20pm, about the landscape of formally verifying zkVMs
 
 slides hosted on [proofproofpass.it](https://proofproofpass.it)
 
