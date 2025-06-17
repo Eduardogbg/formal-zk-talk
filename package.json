@@ -1,0 +1,21 @@
+{
+  "name": "formal-zk-talk",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bunx @marp-team/marp-cli slides.md -o output.html --html=true --debug=true",
+    "preview": "bunx @marp-team/marp-cli slides.md -p --html=true --debug=true"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@marp-team/marp-cli": "^4.2.0",
+    "@marp-team/marpit": "^3.1.3",
+    "highlightjs": "^9.16.2",
+    "highlightjs-lean": "^1.2.0"
+  }
+}
