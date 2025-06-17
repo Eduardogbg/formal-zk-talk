@@ -15,7 +15,12 @@
     width: 100%;
     display: flex;
     justify-content: start;
-    gap: 10vw 
+    align-items: center;
+    margin-bottom: 0;
+    gap: 1vw
+  }
+  footer > p {
+    margin-bottom: 0;
   }
 </style>
 　　　　　　　
