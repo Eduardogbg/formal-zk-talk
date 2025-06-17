@@ -1,7 +1,6 @@
 ---
     marp: true
     theme: uncover
-    _class: invert
 ---
 
 <!-- # zkVMs formal verification -->
@@ -9,18 +8,29 @@
 ### 17th of June (Tuesday)
 - `16:20` Talk: Formal Verification. By Eduardo Bonilha `(Main stage)`
 
----
 
-## this talk
-- hosted on [`proofproofpass.it`](https://proofproofpass.it)
-- source on [`Eduardogbg/proofproofpass.it`](https://github.com/Eduardogbg/proofproofpass.it)
+　　　　　　　
+<style>
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 10vw 
+  }
+</style>
+　　　　　　　
+<!-- footer: |
+  <p>slides: <a href=https://proofproofpass.it>proofproofpass.it</a></p>
+  <p>source: <a href=https://github.com/Eduardogbg/proofproofpass.it>Eduardogbg/proofproofpass.it</a></p>
+-->
 
 ---
+<!-- _footer: "" -->
 
 ## 1. whoami
 - Eduardo, like maths, developer (mention I built a verifier?)
 - works at stealth MEV company
-    ![width:520px](./images/twitter_bio.png)
+    ![width:520px](../images/twitter_bio.png)
 ---
 ## 2. why am I doing a talk on this topic?..
 
@@ -64,7 +74,7 @@ I think I might leave...
 
 ---
 <!-- header: 2. why am I doing a talk on this topic?.. -->
-![](./images/i_love_lean.png)
+![](../images/i_love_lean.png)
 
 ```lean
 theorem bell.recurrence (n: ℕ) :
@@ -86,8 +96,8 @@ theorem bell.eq_partition_count:
 - I genuinely think automated theorem provers/proof assistants are technology as transformative as AI
 - because it's the solution to the slop-topia LLMs coding would bring us to
 - some people who low-key kinda agree with this
-    ![width:240px](./images/hoc_logo.png) ![width:240px](./images/lean_logo.svg)
-    ![width:360px](./images/harmonic_logo.svg)
+    ![width:240px](../images/hoc_logo.png) ![width:240px](../images/lean_logo.svg)
+    ![width:360px](../images/harmonic_logo.svg)
 
 ---
 
@@ -144,15 +154,13 @@ trace of a n-step computation
 
 ---
 <!-- header: 4. "brief" intro to formal verification -->
-
+<!-- _footer: "" -->
 ## 4. "brief" intro to formal verification
 1. what even is formal verification?
 2. formal model -> prove properties
 
-![width:360px](./images/curry_howard_square.jpg) ![width:360px](./images/lambda_cube.png)
+![width:360px](../images/curry_howard_square.jpg) ![width:360px](../images/lambda_cube.png)
 _curry-howard babyyy_
-
----
 
 ---
 
@@ -211,7 +219,7 @@ structure Fin (n : Nat) where
 ## 5.3. certified compilation pipeline
 
 - CompCert
-![](./images/compcert.png)
+![](../images/compcert.png)
 
 - Reflections on Trusting Trust
 ```
@@ -252,7 +260,7 @@ safe source -(malicious compiler)-> backdoored compiler
   }
 </style>
 
-![](./images/zooko_thread2.png)![](./images/zooko_thread1.png)
+![](../images/zooko_thread2.png)![](../images/zooko_thread1.png)
 
 ---
 
@@ -266,12 +274,14 @@ safe source -(malicious compiler)-> backdoored compiler
 ---
 
 <!-- _header: "" -->
+<!-- _footer: "" -->
 
-![bg](./images/tamarin-attack.png)
+![bg](../images/tamarin-attack.png)
 
 ---
 
 <!-- _header: "" -->
+<!-- _footer: "" -->
 
 <style scoped>
   section {
@@ -299,7 +309,7 @@ safe source -(malicious compiler)-> backdoored compiler
     flex: 0 0 auto;
   }
 </style>
-![bg](./images/squirrel_1.png) ![bg](./images/squirrel_0.png) 
+![bg](../images/squirrel_1.png) ![bg](../images/squirrel_0.png) 
 
 ---
 
@@ -307,6 +317,7 @@ safe source -(malicious compiler)-> backdoored compiler
 
 ---
 
+<!-- _footer: "" -->
 <style scoped>
     section { margin: 0; padding: 0;}
     img {
@@ -315,9 +326,12 @@ safe source -(malicious compiler)-> backdoored compiler
     }
 </style>
 
-![](./images/risc0/bugs_layers.png)
+
+![](../images/risc0/bugs_layers.png)
 
 ---
+
+<!-- _footer: "" -->
 <style scoped>
     section { margin: 0; padding: 0;}
     img {
@@ -326,7 +340,7 @@ safe source -(malicious compiler)-> backdoored compiler
     }
 </style>
 
-![](./images/risc0/bugs_circuits.png)
+![](../images/risc0/bugs_circuits.png)
 
 ---
 <!-- header: "6. extraction" -->
@@ -358,6 +372,7 @@ def determinism (k: SomeOtherInput):
 
 ---
 
+<!-- _footer: "" -->
 <style scoped>
     body { height: 100vh }
     section { margin: 0; padding: 0;}
@@ -367,7 +382,7 @@ def determinism (k: SomeOtherInput):
     }
 </style>
 
-![bg](./images/risc0/zirgen_pipeline.png)　
+![bg](../images/risc0/zirgen_pipeline.png)　
 .　　　
 　
 　
@@ -402,6 +417,7 @@ wanna see what the extracted code looks like?
 
 ---
 <!-- header: "" -->
+<!-- _footer: "" -->
 <style scoped>
     body { height: 100vh }
     section { margin: 0; padding: 0;}
@@ -411,10 +427,11 @@ wanna see what the extracted code looks like?
     }
 </style>
 
-![](./images/extraction.png)
+![](../images/extraction.png)
 
 ---
 <!-- header: "" -->
+<!-- _footer: "" -->
 <style scoped>
     body { height: 100vh }
     section { margin: 0; padding: 0;}
@@ -424,7 +441,7 @@ wanna see what the extracted code looks like?
     }
 </style>
 
-![](./images/extraction2.png)
+![](../images/extraction2.png)
 
 ---
 <!-- _header: "8. extraction" -->
@@ -528,6 +545,7 @@ theorem poseidon₂_test:
 - acl2
 
 ---
+<!-- _footer: "" -->
 <style scoped>
     body { height: 100vh }
     section { margin: 0; padding: 0;}
@@ -536,7 +554,7 @@ theorem poseidon₂_test:
         width: 95%
     }
 </style>
-![bg](./images/jolt-sail-lean.png)
+![bg](../images/jolt-sail-lean.png)
 
 "towards a verified jolt zkVM" talk
 
@@ -557,8 +575,9 @@ theorem poseidon₂_test:
     - or extracted from (e.g.) rust with aenas
 
 ---
-
-![bg](./images/ix.jpeg)
+<!-- _header: "" -->
+<!-- _footer: "" -->
+![bg](../images/ix.jpeg)
 
 ---
 
