@@ -3,8 +3,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "build": "bunx @marp-team/marp-cli slides.md -o output.html --html=true --debug=true",
-    "preview": "bunx @marp-team/marp-cli slides.md -p --html=true --debug=true"
+    "build": "bunx @marp-team/marp-cli ./src/slides.md -o ./build/slides.html --html=true --debug=true",
+    "preview": "bunx @marp-team/marp-cli ./src/slides.md -p --html=true --debug=true"
   },
   "devDependencies": {
     "@types/bun": "latest"

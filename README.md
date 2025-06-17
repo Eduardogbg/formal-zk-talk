@@ -6,13 +6,13 @@ slides hosted on [proofproofpass.it](https://proofproofpass.it)
 
 ## notes
 
-- [notes.md](notes.md)
+- [`notes.md`](./src/notes.md)
 
 ## development environment
 
-- the slides are written in markdown on `slides.md`
+- the slides are written in markdown on [`slides.md`](./src/slides.md)
 - then compiled to `html` with `marp`
-- `engine.ts` allows you to add plugins to `marp`
+- [`engine.ts`](./marp/engine.ts) allows you to add plugins to `marp`
 
 ```
 # install deps
