@@ -1,4 +1,4 @@
-# formal-zk-talk
+# proofproofpass.it
 
 my talk at zuberlin 2025, tuesday 17th of june, about the landscape of formally verifying zkVMs
 

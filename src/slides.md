@@ -11,6 +11,12 @@
 
 ---
 
+## this talk
+- hosted on [`proofproofpass.it`](https://proofproofpass.it)
+- source on [`Eduardogbg/proofproofpass.it`](https://github.com/Eduardogbg/proofproofpass.it)
+
+---
+
 ## 1. whoami
 - Eduardo, like maths, developer (mention I built a verifier?)
 - works at stealth MEV company
