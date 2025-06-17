@@ -55,9 +55,9 @@
 
 .line-1 { animation: fadeIn 0.8s ease-out 0s both; }
 .line-2 { animation: fadeIn 0.8s ease-out 3s both; }
-.line-3 { animation: fadeIn 0.8s ease-out 4s both; }
-.line-4 { animation: fadeIn 0.8s ease-out 5s both; }
-.line-5 { animation: fadeIn 0.8s ease-out 8s both; }
+.line-3 { animation: fadeIn 0.8s ease-out 4.2s both; }
+.line-4 { animation: fadeIn 0.8s ease-out 5.2s both; }
+.line-5 { animation: fadeIn 0.8s ease-out 7.8s both; }
 </style>
 <p class="line-1">
 wait this guy doesn't even work on formally verifying zkVMs?
@@ -69,7 +69,7 @@ am I being scammed?
 who let this guy in?
 </p>
 <p class="line-4">
-wait, he's saying exactly what's written on the slide?
+wait, he's saying exactly what's written on the slides?
 </p>
 <p class="line-5">
 I think I might leave...
@@ -228,9 +228,9 @@ structure Fin (n : Nat) where
 
 - Reflections on Trusting Trust
 ```
-backdoored compiler source -(compiler)-> malicious binary 
+backdoored compiler source -(compiler)→ malicious binary 
 
-safe source -(malicious compiler)-> backdoored compiler
+safe source -(malicious compiler)→ backdoored compiler
 
 ```
 
@@ -565,10 +565,30 @@ theorem poseidon₂_test:
 
 ---
 
-## 9. correct by construction
+## 9. let's have a _lean_ pipeline then
 
 ---
-<!-- header: "9. correct by construction" -->
+<!-- header: "9. let's have a _lean_ pipeline then" -->
+## i wanna briefly mention powdr
+- compiler & IR
+- allows defining custom ISAs
+- you could host zkVM circuits there and have it automatically optimize it
+- autoacc: your constraints → circuit synthesizer → optimized circuit
+- it would kinda take a spot akin to LLVM in the toolchain
+
+---
+
+## zk in lean
+- zkLib → arklib: verifies modular IOPs
+- cLean: circuit zkDSL
+- zkLean: zkDSL with verified semantics for lookups (and more?)
+- provenZK: analysize extracted circuits
+- EVMYulLean: "executable formal model of the evm and yul"
+- ...more?
+- no need to have more pipeline steps to interop between these
+  - any necessary transformations could be verified too
+  - could prove equivalences and lift theorems from each other when needed
+---
 
 ## argument/ix (previous known as lurk)
 (remember pcc? now make it zk!)
@@ -578,6 +598,7 @@ theorem poseidon₂_test:
 - could have truly end-to-end certified zkVM
     - contracts could either be in lean
     - or extracted from (e.g.) rust with aenas
+- "correct by construction"
 
 ---
 <!-- _header: "" -->
@@ -587,17 +608,34 @@ theorem poseidon₂_test:
 ---
 
 ## argument/ix
-- from their readme.md:
+- from their `readme.md`:
 > [...] hardware based process isolation costs 25%-33% overhead
 [...] because we don't know how to safely run applications in protection ring 0.
 [...] zkPCC potentially enables more sophisticated software-based process isolation.
 
 ---
 
-## don't forget slides about
+## note to self: don't forget slides about
 - ethproofs
 - verified zkEVM
     - 20 mil invested in this
 - 
+
+---
+
+## 10. conclusion
+
+---
+<!-- header: "10. conclusion" -->
+
+## you can do it too
+- opus 4 is quite good at lean
+- natural numbers game is quite fun
+- curry-howard, type-theory, all so so neat
+- contribute to mathlib?
+
+---
+
+# thanks :)
 
 ---
